@@ -14,7 +14,14 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 
 ### Service Ontology:
 
+For PFR.ipynb: Open the conda terminal in your env:
+
+    conda install -c conda-forge poppler
+
+You can now open PFR.ipynb and execute it.
+
 - PFR.ipynb: Dans ce fichier sous jupyter notebook, vous trouverez la chaine de traitement pour telecharger les pdf de Arvix, traiter les textes afin d'en extraire les entities nommées et enfin la creation d'une entology visible grace a Protegé.
+
 
 ### Service AWS:
 
@@ -27,7 +34,6 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 ### Service SOA:
 
 - /app : Dans le repertoire /app, vous trouverez un API permettant d'analyser le contenu d'un texte avec NLTK. Deux services sont proposés:
-
 
     Exemple : 
     
@@ -83,13 +89,10 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
             "France"
         ]
         }
+    
+    Un swaggerUI a eté fourni api.json permettant de repondre au standard OpenAPI et de fournir des explications sur cette API.
 
-
-Interactive API docs: 
-
-Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
-
-### Service Docker:
+### Service Docker (de cette API):
 
 Go in the main folder and type to build the image:
 
@@ -103,21 +106,25 @@ Interactive API docs:
 
 Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
 
-## Installation 
-
-For PFR.ipynb: Open the conda terminal in your env:
-
-    conda install -c conda-forge poppler
-
-You can now open PFR.ipynb and excute it.
-
-### Application : Only for AWS, SOA and Hadoop services (on Ubuntu or MacOs):
+##### Sinon, executez avec  Python:
 
 Create a virtual environment and activate it:
 
     python3 -m venv venv
     . venv/bin/activate
 
-Install arXiv Intelligence:
+Install requirements:
 
     pip install -r requirements.txt
+
+Run the server with:
+
+    uvicorn main:app --reload
+
+Interactive API docs: 
+
+Now you can go to http://127.0.0.1:8000/docs#/ and try the API to analyse a text.
+
+ENJOY !!
+
+
