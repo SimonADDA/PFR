@@ -5,6 +5,7 @@ from unittest import result
 import uvicorn
 import numpy
 from fastapi import FastAPI
+import json
 from pydoc import doc
 import nltk
 from nltk import word_tokenize,pos_tag
@@ -32,6 +33,7 @@ app = FastAPI(
     title=" API which extract entities with NLTK"
 )
 
+
 @app.get('/NLTK/Tag')
 def my_text(text:str):
     output_spacy=list(NLTK_function_tag(text))
@@ -44,3 +46,8 @@ def my_text(text:str):
     result={"Names entities in text from NLTK ": output_spacy}
     return result
     
+def custom_openapi():
+    with open("app/api.json", "r") as openapi:
+        return json.load(openapi)
+
+app.openapi = custom_openapi

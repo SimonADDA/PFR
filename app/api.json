@@ -1,0 +1,99 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": " API which allow you to analyse a text and extract entities with NLTK",
+    "version": "0.1.2"
+  },
+  "tags": [
+    {
+      "name": "NLTK analysis",
+      "description": "NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum."
+    }
+  ],
+  "paths": {
+    "/NLTK/Tag": {
+      "get": {
+        "tags": [
+          "NLTK analysis"
+        ],
+        "summary": "Extract all the Tag of the text",
+        "operationId": "my_text_NLTK_Tag_get",
+        "parameters": [
+          {
+            "name": "text",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "title": "Text",
+              "type": "string",
+              "example": "Aux groupes présents depuis le Paléolithique et le Néolithique, sont venues s'ajouter, à l'Âge du bronze et à l'Âge du fer, des vagues successives de Celtes, puis au iiie siècle de peuples germains (Francs, Wisigoths, Alamans, Burgondes) et au ixe siècle de scandinaves appelés Normands."
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value",
+            "content": {}
+          },
+          "404": {
+            "description": "Entities names not found",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/NLTK/NER": {
+      "get": {
+        "tags": [
+          "NLTK analysis"
+        ],
+        "summary": "Extraction of entities names in text",
+        "description": "This query allow you to extract all the names in a text",
+        "operationId": "my_text_NLTK_NER_get",
+        "parameters": [
+          {
+            "name": "text",
+            "in": "query",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "title": "Text",
+              "type": "string",
+              "example": "Aux groupes présents depuis le Paléolithique et le Néolithique, sont venues s'ajouter, à l'Âge du bronze et à l'Âge du fer, des vagues successives de Celtes, puis au iiie siècle de peuples germains (Francs, Wisigoths, Alamans, Burgondes) et au ixe siècle de scandinaves appelés Normands."
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value",
+            "content": {}
+          },
+          "404": {
+            "description": "Entities names not found",
+            "content": {}
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}

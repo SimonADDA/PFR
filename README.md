@@ -18,7 +18,8 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 
 ### Service AWS:
 
-- /AWS: Dans ce repertoire l'utulisation du service comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).                                
+- /AWS: Dans ce repertoire l'utilisation du service Comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).
+
         On y trouve un notebook que l'utilisateur doit executer cellules par cellules afin de voir les resultats.
         Dans le repertoire /Download on y trouve des fichier telecharger pour effectuer les tests du service dans le notebook.
         Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf. Une section dans le notebook explique les details.
@@ -28,9 +29,9 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 - /app : Dans le repertoire /app, vous trouverez un API permettant d'analyser le contenu d'un texte avec NLTK. Deux services sont proposés:
 
 
-        Exemple : 
-        
-        L'histoire de la France commence avec les premières occupations humaines du territoire correspondant au pays actuel. Aux groupes présents depuis le Paléolithique et le Néolithique, sont venues s'ajouter, des peuples germains (Francs, Wisigoths, Alamans, Burgondes) et au ixe siècle de scandinaves appelés Normands.
+    Exemple : 
+    
+    L'histoire de la France commence avec les premières occupations humaines du territoire correspondant au pays actuel. Aux groupes présents depuis le Paléolithique et le Néolithique, sont venues s'ajouter, des peuples germains (Francs, Wisigoths, Alamans, Burgondes) et au ixe siècle de scandinaves appelés Normands.
 
 - GET NLTK/Tag : Permet d'extraire les tags d'un texte:
 
@@ -64,7 +65,7 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
             [
                 "avec",
                 "NN"
-            ]
+            ] ...
         ]
         }
 
