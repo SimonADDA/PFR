@@ -1,92 +1,122 @@
-# ProjetFilRouge
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+# Projet Fil Rouge MS SIO Simon ADDA 
+
+Objectifs:
+
+Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite. Être en mesure d'apporter un indicateur de la qualité et de la précision de la chaîne de traitement fait partie des objectifs
+
+## Pré-requis
+
+Installer Python 3 : [Téléchargement Python 3](https://www.python.org/downloads/)
+
+## Presentation du projet:
+
+### Service Ontology:
+
+- PFR.ipynb: Dans ce fichier sous jupyter notebook, vous trouverez la chaine de traitement pour telecharger les pdf de Arvix, traiter les textes afin d'en extraire les entities nommées et enfin la creation d'une entology visible grace a Protegé.
+
+### Service AWS:
+
+- /AWS: Dans ce repertoire l'utulisation du service comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).                                
+        On y trouve un notebook que l'utilisateur doit executer cellules par cellules afin de voir les resultats.
+        Dans le repertoire /Download on y trouve des fichier telecharger pour effectuer les tests du service dans le notebook.
+        Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf. Une section dans le notebook explique les details.
+
+### Service SOA:
+
+- /app : Dans le repertoire /app, vous trouverez un API permettant d'analyser le contenu d'un texte avec NLTK. Deux services sont proposés:
 
 
+        Exemple : 
+        
+        L'histoire de la France commence avec les premières occupations humaines du territoire correspondant au pays actuel. Aux groupes présents depuis le Paléolithique et le Néolithique, sont venues s'ajouter, des peuples germains (Francs, Wisigoths, Alamans, Burgondes) et au ixe siècle de scandinaves appelés Normands.
 
-## Getting started
+- GET NLTK/Tag : Permet d'extraire les tags d'un texte:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+        curl -X 'GET' \ 'http://127.0.0.1/NLTK/Tag text=L%27histoire%20de%20la%20France%20commence%20avec%20les%20premi%C3%A8res%20occupations%20humaines%20du%20territoire%20correspondant%20au%20pays%20actuel.%20Aux%20groupes%20pr%C3%A9sents%20depuis%20le%20Pal%C3%A9olithique%20et%20le%20N%C3%A9olithique%2C%20sont%20venues%20s%27ajouter%2C%20des%20peuples%20germains%20%28Francs%2C%20Wisigoths%2C%20Alamans%2C%20Burgondes%29%20et%20au%20ixe%20si%C3%A8cle%20de%20scandinaves%20appel%C3%A9s%20Normands.' \
+        -H 'accept: application/json'
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+        Response Body:
+        {
+        "Tag in text from NLTK ": [
+            [
+            [
+                "L'histoire",
+                "NNP"
+            ],
+            [
+                "de",
+                "NNP"
+            ],
+            [
+                "la",
+                "FW"
+            ],
+            [
+                "France",
+                "NNP"
+            ],
+            [
+                "commence",
+                "NN"
+            ],
+            [
+                "avec",
+                "NN"
+            ]
+        ]
+        }
 
-## Add your files
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- GET NLTK/NER: Permet d'extraire les entitées nommées d'un texte
+	
+        Response body:
+        {
+        "Names entities in text from NLTK ": [
+            "Francs",
+            "Normands",
+            "Alamans",
+            "Wisigoths",
+            "Burgondes",
+            "France"
+        ]
+        }
 
-```
-cd existing_repo
-git remote add origin https://gitlab-student.centralesupelec.fr/simon.adda/projetfilrouge.git
-git branch -M main
-git push -uf origin main
-```
 
-## Integrate with your tools
+Interactive API docs: 
 
-- [ ] [Set up project integrations](https://gitlab-student.centralesupelec.fr/simon.adda/projetfilrouge/-/settings/integrations)
+Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
 
-## Collaborate with your team
+### Service Docker:
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Go in the main folder and type to build the image:
 
-## Test and Deploy
+    docker build -t pfr .
 
-Use the built-in continuous integration in GitLab.
+Then this line to run the container:
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+    docker run -d --name mycontainer -p 80:80 pfr
 
-***
+Interactive API docs: 
 
-# Editing this README
+Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+## Installation 
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+For PFR.ipynb: Open the conda terminal in your env:
 
-## Name
-Choose a self-explaining name for your project.
+    conda install -c conda-forge poppler
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+You can now open PFR.ipynb and excute it.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+### Application : Only for AWS, SOA and Hadoop services (on Ubuntu or MacOs):
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Create a virtual environment and activate it:
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+    python3 -m venv venv
+    . venv/bin/activate
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Install arXiv Intelligence:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+    pip install -r requirements.txt

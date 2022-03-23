@@ -1,0 +1,272 @@
+[
+    {
+        "index": 0,
+        "Person": "Aaronson, J.",
+        "Fiability": 0.9867931604385376
+    },
+    {
+        "index": 1,
+        "Person": "Denker, M.",
+        "Fiability": 0.9666887521743774
+    },
+    {
+        "index": 2,
+        "Person": "Urban\u0301ski, M.",
+        "Fiability": 0.9715626239776611
+    },
+    {
+        "index": 3,
+        "Person": "Anderson, T. C.",
+        "Fiability": 0.9599947333335876
+    },
+    {
+        "index": 4,
+        "Person": "Hughes, K.",
+        "Fiability": 0.9457246661186218
+    },
+    {
+        "index": 5,
+        "Person": "Roos, J.",
+        "Fiability": 0.9628537893295288
+    },
+    {
+        "index": 6,
+        "Person": "Seeger, A.",
+        "Fiability": 0.9617085456848145
+    },
+    {
+        "index": 7,
+        "Person": "Beardon, A. F.",
+        "Fiability": 0.9783458113670349
+    },
+    {
+        "index": 8,
+        "Person": "Bishop, C. J.",
+        "Fiability": 0.9074485301971436
+    },
+    {
+        "index": 9,
+        "Person": "Peres, Y.",
+        "Fiability": 0.9677588939666748
+    },
+    {
+        "index": 10,
+        "Person": "Bowen, R.",
+        "Fiability": 0.983867347240448
+    },
+    {
+        "index": 11,
+        "Person": "Cheraghi, D.",
+        "Fiability": 0.9779359698295593
+    },
+    {
+        "index": 12,
+        "Person": "DeZotti, A.",
+        "Fiability": 0.9747372269630432
+    },
+    {
+        "index": 13,
+        "Person": "Yang, F.",
+        "Fiability": 0.9125445485115051
+    },
+    {
+        "index": 14,
+        "Person": "Denker, M.",
+        "Fiability": 0.9587724208831787
+    },
+    {
+        "index": 15,
+        "Person": "Urban\u0301ski, M.",
+        "Fiability": 0.9655007719993591
+    },
+    {
+        "index": 16,
+        "Person": "Denker, M.",
+        "Fiability": 0.9506571292877197
+    },
+    {
+        "index": 17,
+        "Person": "Urban\u0301ski, M.",
+        "Fiability": 0.9586169123649597
+    },
+    {
+        "index": 18,
+        "Person": "Hausdorff",
+        "Fiability": 0.9575031995773315
+    },
+    {
+        "index": 19,
+        "Person": "Denker, M.",
+        "Fiability": 0.9710243940353394
+    },
+    {
+        "index": 20,
+        "Person": "Urban\u0301ski, M.",
+        "Fiability": 0.9650424718856812
+    },
+    {
+        "index": 21,
+        "Person": "Denker, M.",
+        "Fiability": 0.983275830745697
+    },
+    {
+        "index": 22,
+        "Person": "Urban\u0301ski, M.",
+        "Fiability": 0.9726951122283936
+    },
+    {
+        "index": 23,
+        "Person": "Falconer, K. J.",
+        "Fiability": 0.9846254587173462
+    },
+    {
+        "index": 24,
+        "Person": "Falconer, K. J.",
+        "Fiability": 0.971168041229248
+    },
+    {
+        "index": 25,
+        "Person": "Fraser, J. M.",
+        "Fiability": 0.9650029540061951
+    },
+    {
+        "index": 26,
+        "Person": "Ka\u0308enma\u0308ki, A.",
+        "Fiability": 0.9918834567070007
+    },
+    {
+        "index": 27,
+        "Person": "Fraser, J. M.",
+        "Fiability": 0.9831289052963257
+    },
+    {
+        "index": 28,
+        "Person": "Patterson-Sullivan",
+        "Fiability": 0.9522382020950317
+    },
+    {
+        "index": 29,
+        "Person": "Fraser, J. M.",
+        "Fiability": 0.9753210544586182
+    },
+    {
+        "index": 30,
+        "Person": "Fraser, J. M.",
+        "Fiability": 0.9835190176963806
+    },
+    {
+        "index": 31,
+        "Person": "Stuart, L.",
+        "Fiability": 0.9931952357292175
+    },
+    {
+        "index": 32,
+        "Person": "Fraser, J. M.",
+        "Fiability": 0.9881640076637268
+    },
+    {
+        "index": 33,
+        "Person": "Yu, H.",
+        "Fiability": 0.9567216038703918
+    },
+    {
+        "index": 34,
+        "Person": "Geyer, L.",
+        "Fiability": 0.9825130701065063
+    },
+    {
+        "index": 35,
+        "Person": "Ka\u0308enma\u0308ki, A.",
+        "Fiability": 0.9775826930999756
+    },
+    {
+        "index": 36,
+        "Person": "Lehrba\u0308ck, J.",
+        "Fiability": 0.9666567444801331
+    },
+    {
+        "index": 37,
+        "Person": "Vuorinen, M.",
+        "Fiability": 0.9705705046653748
+    },
+    {
+        "index": 38,
+        "Person": "Luukkainen, J.",
+        "Fiability": 0.9818608164787292
+    },
+    {
+        "index": 39,
+        "Person": "Manning, A.",
+        "Fiability": 0.9746140837669373
+    },
+    {
+        "index": 40,
+        "Person": "McCluskey, H.",
+        "Fiability": 0.9650012850761414
+    },
+    {
+        "index": 41,
+        "Person": "McMullen, C. T.",
+        "Fiability": 0.9577696919441223
+    },
+    {
+        "index": 42,
+        "Person": "McMullen, C. T.",
+        "Fiability": 0.9423576593399048
+    },
+    {
+        "index": 43,
+        "Person": "Hausdorff",
+        "Fiability": 0.9160215258598328
+    },
+    {
+        "index": 44,
+        "Person": "McMullen, C. T.",
+        "Fiability": 0.9535810351371765
+    },
+    {
+        "index": 45,
+        "Person": "Milnor, J.",
+        "Fiability": 0.987112820148468
+    },
+    {
+        "index": 46,
+        "Person": "Pe\u0301rez-Marco, R.",
+        "Fiability": 0.9875835180282593
+    },
+    {
+        "index": 47,
+        "Person": "Roos, J.",
+        "Fiability": 0.9633647799491882
+    },
+    {
+        "index": 48,
+        "Person": "Seeger, A.",
+        "Fiability": 0.9584592580795288
+    },
+    {
+        "index": 49,
+        "Person": "Stratmann, B. O.",
+        "Fiability": 0.9803923964500427
+    },
+    {
+        "index": 50,
+        "Person": "Urban\u0301ski, M.",
+        "Fiability": 0.9594509601593018
+    },
+    {
+        "index": 51,
+        "Person": "Stratmann, B. O.",
+        "Fiability": 0.9830615520477295
+    },
+    {
+        "index": 52,
+        "Person": "Urban\u0301ski, M.",
+        "Fiability": 0.9505059719085693
+    },
+    {
+        "index": 53,
+        "Person": "Jarn\u0131\u0301k",
+        "Fiability": 0.9870273470878601
+    }
+]
