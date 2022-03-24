@@ -2,11 +2,13 @@
 import arxiv
 import csv
 
+#You can choose here how many pdf you want. 
+max_results=100
+
 search = arxiv.Search(
-    # Seulement les sujets Blockchain
-    query = "cat:cs.Blockchain",
-    max_results = 100,
-    sort_by = arxiv.SortCriterion.SubmittedDate
+  query = "Blockchain",
+    max_results = max_results,
+  sort_by = arxiv.SortCriterion.SubmittedDate
 )
 
 rows = [['ID', 'Title', 'Authors', 'Date'] ]
@@ -16,7 +18,7 @@ for result in search.results():
 
 # print(rows)
 
-with open('Hadoop/dataset.xlsx', 'w',newline ='') as f:
+with open('Hadoop/dataset.csv', 'w',newline ='') as f:
     write = csv.writer(f)
     write.writerows(rows)
 

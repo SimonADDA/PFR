@@ -12,11 +12,13 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 
 ## Presentation du projet:
 
-### Service Ontology:
+## Installation:
 
-For PFR.ipynb: Open the conda terminal in your env:
+For PFR.ipynb and AWS service.ipynb: Open the conda terminal in your env:
 
     conda install -c conda-forge poppler
+
+### Service Ontology:
 
 You can now open PFR.ipynb and execute it.
 
