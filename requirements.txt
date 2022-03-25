@@ -21,6 +21,7 @@
 # watchgod==0.8.1
 # websockets==10.2
 
+
 anyio==3.5.0
 arxiv==1.4.2
 asgiref==3.5.0
@@ -33,6 +34,7 @@ cryptography==36.0.2
 decorator==5.1.1
 docopt==0.6.2
 fastapi==0.68.2
+fastavro==1.4.10
 feedparser==6.0.8
 gssapi==1.7.3
 h11==0.13.0

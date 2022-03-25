@@ -18,7 +18,3 @@ client.upload(hdfs_path,
             chunk_size=65536, 
             progress=None, 
             cleanup=True)
-
-
-# for d in client.list('/education/cs_2022_spring_1/m.zavlyanova-cs/fil-rouge/'):
-#     print(d)
