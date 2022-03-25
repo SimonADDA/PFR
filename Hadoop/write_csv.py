@@ -6,7 +6,7 @@ import csv
 max_results=100
 
 search = arxiv.Search(
-  query = "Blockchain",
+  query = "Computer",
     max_results = max_results,
   sort_by = arxiv.SortCriterion.SubmittedDate
 )

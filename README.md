@@ -14,18 +14,37 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 
 ## Installation:
 
-For PFR.ipynb and AWS service.ipynb: Open the conda terminal in your env:
 
-    conda install -c conda-forge poppler
+Create a virtual environment and activate it:
+
+    python3 -m venv venv
+    . venv/bin/activate
+
+Install requirements:
+
+    pip install -r requirements.txt
+
 
 ### Service Ontology:
+
+For PFR.ipynb: Open the conda terminal in your env:
+
+    conda install -c conda-forge poppler
 
 You can now open PFR.ipynb and execute it.
 
 - PFR.ipynb: Dans ce fichier sous jupyter notebook, vous trouverez la chaine de traitement pour telecharger les pdf de Arvix, traiter les textes afin d'en extraire les entities nommées et enfin la creation d'une entology visible grace a Protegé.
 
+### Service Hadoop:
+
+- /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv et un code d'ecrtire dans le cluster.
 
 ### Service AWS:
+
+For AWS_service.ipynb: Open the conda terminal in your env:
+
+    conda install -c conda-forge poppler
+
 
 - /AWS: Dans ce repertoire l'utilisation du service Comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).
 
@@ -109,15 +128,6 @@ Interactive API docs:
 Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
 
 ##### Sinon, executez avec  Python:
-
-Create a virtual environment and activate it:
-
-    python3 -m venv venv
-    . venv/bin/activate
-
-Install requirements:
-
-    pip install -r requirements.txt
 
 Run the server with:
 
