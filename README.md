@@ -17,33 +17,30 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 
 Create a virtual environment and activate it:
 
-    python3 -m venv venv
-    . venv/bin/activate
+    $ python3 -m venv venv
+    $ . venv/bin/activate
 
 Install requirements:
 
-    pip install -r requirements.txt
+    $ pip install -r requirements.txt
 
 
 ### Service Ontology:
 
 For PFR.ipynb: Open the conda terminal in your env:
 
-    conda install -c conda-forge poppler
+    $ conda install -c conda-forge poppler
 
 You can now open PFR.ipynb and execute it.
 
-- PFR.ipynb: Dans ce fichier sous jupyter notebook, vous trouverez la chaine de traitement pour telecharger les pdf de Arvix, traiter les textes afin d'en extraire les entities nommées et enfin la creation d'une entology visible grace a Protegé.
+- PFR.ipynb: Dans ce fichier sous jupyter notebook, vous trouverez la chaine de traitement pour telecharger les pdf de Arvix, traiter les textes afin d'en extraire les entities nommées et enfin la creation d'une ontology visible grace a Protegé.
 
-### Service Hadoop:
-
-- /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv et un code d'ecrtire dans le cluster.
 
 ### Service AWS:
 
 For AWS_service.ipynb: Open the conda terminal in your env:
 
-    conda install -c conda-forge poppler
+    $ conda install -c conda-forge poppler
 
 
 - /AWS: Dans ce repertoire l'utilisation du service Comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).
@@ -51,6 +48,34 @@ For AWS_service.ipynb: Open the conda terminal in your env:
         On y trouve un notebook que l'utilisateur doit executer cellules par cellules afin de voir les resultats.
         Dans le repertoire /Download on y trouve des fichier telecharger pour effectuer les tests du service dans le notebook.
         Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf. Une section dans le notebook explique les details.
+
+
+### Service Hadoop:
+
+- /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
+
+
+#### Export scientific articles metadata to HDFS
+
+Install the requirement
+
+    $ sudo apt-get install gcc python-dev libkrb5-dev
+
+#### Envoyer un ticket
+
+    $ kinit s.adda-cs
+    $ klist
+
+Vous devez executez write_csv.py puis csv_to_hdfs.py:
+
+    $ python write_csv.py
+    $ python csv_to_hdfs.py
+
+
+#### Vérifier que la table est sur hdfs (dans connexion ssh)
+
+    $ hdfs dfs -ls /education/cs_2022_spring_1/s.adda-cs/PFR/
+
 
 ### Service SOA:
 
@@ -117,11 +142,11 @@ For AWS_service.ipynb: Open the conda terminal in your env:
 
 Go in the main folder and type to build the image:
 
-    docker build -t pfr .
+    $ docker build -t pfr .
 
 Then this line to run the container:
 
-    docker run -d --name mycontainer -p 80:80 pfr
+    $ docker run -d --name mycontainer -p 80:80 pfr
 
 Interactive API docs: 
 
@@ -131,7 +156,7 @@ Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
 
 Run the server with:
 
-    uvicorn main:app --reload
+    $ uvicorn main:app --reload
 
 Interactive API docs: 
 
