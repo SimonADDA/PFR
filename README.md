@@ -12,19 +12,6 @@ Installer Python 3 : [Téléchargement Python 3](https://www.python.org/download
 
 ## Presentation du projet:
 
-## Installation:
-
-
-Create a virtual environment and activate it:
-
-    $ python3 -m venv venv
-    $ . venv/bin/activate
-
-Install requirements:
-
-    $ pip install -r requirements.txt
-
-
 ### Service Ontology:
 
 For PFR.ipynb: Open the conda terminal in your env:
@@ -42,18 +29,28 @@ For AWS_service.ipynb: Open the conda terminal in your env:
 
     $ conda install -c conda-forge poppler
 
-
 - /AWS: Dans ce repertoire l'utilisation du service Comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).
 
-        On y trouve un notebook que l'utilisateur doit executer cellules par cellules afin de voir les resultats.
-        Dans le repertoire /Download on y trouve des fichier telecharger pour effectuer les tests du service dans le notebook.
-        Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf. Une section dans le notebook explique les details.
+    On y trouve un notebook que l'utilisateur doit executer cellules par cellules afin de voir les resultats.
+    Dans le repertoire /Download on y trouve des fichier telecharger pour effectuer les tests du service dans le notebook.
+    Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf. Une section dans le notebook explique les details.
 
 
 ### Service Hadoop:
 
-- /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
+#### Installation:
 
+Create a virtual environment and activate it:
+
+    $ python3 -m venv venv
+    $ . venv/bin/activate
+
+Install requirements:
+
+    $ pip install -r requirements.txt
+
+
+- /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
 
 #### Export scientific articles metadata to HDFS
 
@@ -68,14 +65,12 @@ Install the requirement
 
 Vous devez executez write_csv.py puis csv_to_hdfs.py:
 
-    $ python write_csv.py
-    $ python csv_to_hdfs.py
-
+    $ python3 Hadoop/write_csv.py
+    $ python3 Hadoop/csv_to_hdfs.py
 
 #### Vérifier que la table est sur hdfs (dans connexion ssh)
 
     $ hdfs dfs -ls /education/cs_2022_spring_1/s.adda-cs/PFR/
-
 
 ### Service SOA:
 

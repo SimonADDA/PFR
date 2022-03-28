@@ -3,7 +3,7 @@ import arxiv
 import csv
 
 #You can choose here how many pdf you want. 
-max_results=500
+max_results=1000
 
 search = arxiv.Search(
   query = "AI",
@@ -11,9 +11,9 @@ search = arxiv.Search(
   sort_by = arxiv.SortCriterion.SubmittedDate
 )
 
-rows = [['ID', 'Title', 'Authors', 'Date','Categorie'] ]
+rows = [['ID', 'Title', 'Authors', 'Date','Year','Categorie'] ]
 for result in search.results():
-    rows.append(list([str(result.entry_id), str(result.title),str(result.categories), str(result.authors), str(result.published)]))
+    rows.append(list([str(result.entry_id), str(result.title), str(result.authors), str(result.published),str(result.categories)]))
 
 with open('Hadoop/dataset.csv', 'w',newline ='') as f:
     write = csv.writer(f)
