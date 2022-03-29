@@ -41,16 +41,16 @@ You can now open PFR.ipynb and execute it.
 
 On y trouve un script python "AWS.py" et un notebook que l'utilisateur peut executer cellules par cellules afin de voir les resultats AWS_service.ipynb
 
-- Dans le repertoire /Download on y trouve des fichiers telechargés.
+Dans le repertoire /Download on y trouve des fichiers telechargés.
 Vous pouvez executez:
 
-    $ python3 AWS/AWS_Exemple.py
+        $ python3 AWS/AWS_Exemple.py
 
 Les resultats se trouves dans le fichiers json : /Download/EntitiesPDF.json
 
-- Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf puis executez:
+Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf puis executez:
 
-    $ python3 AWS/AWS_Teacher.py
+        $ python3 AWS/AWS_Teacher.py
 
 Les resultats se trouves dans le fichiers json : /Professeur/AWS_json_teacher.json
 
