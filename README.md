@@ -41,12 +41,14 @@ You can now open PFR.ipynb and execute it.
 
 On y trouve un script python "AWS.py" et un notebook que l'utilisateur peut executer cellules par cellules afin de voir les resultats AWS_service.ipynb
 
+
 Dans le repertoire /Download on y trouve des fichiers telechargés.
 Vous pouvez executez:
 
         $ python3 AWS/AWS_Exemple.py
 
 Les resultats se trouves dans le fichiers json : /Download/EntitiesPDF.json
+
 
 Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf puis executez:
 
@@ -58,6 +60,7 @@ Les resultats se trouves dans le fichiers json : /Professeur/AWS_json_teacher.js
 
 
 - /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
+
 
 #### Export scientific articles metadata to HDFS
 
@@ -93,52 +96,7 @@ Install the requirement
         curl -X 'GET' \ 'http://127.0.0.1/NLTK/Tag text=L%27histoire%20de%20la%20France%20commence%20avec%20les%20premi%C3%A8res%20occupations%20humaines%20du%20territoire%20correspondant%20au%20pays%20actuel.%20Aux%20groupes%20pr%C3%A9sents%20depuis%20le%20Pal%C3%A9olithique%20et%20le%20N%C3%A9olithique%2C%20sont%20venues%20s%27ajouter%2C%20des%20peuples%20germains%20%28Francs%2C%20Wisigoths%2C%20Alamans%2C%20Burgondes%29%20et%20au%20ixe%20si%C3%A8cle%20de%20scandinaves%20appel%C3%A9s%20Normands.' \
         -H 'accept: application/json'
 
-        Response Body:
-        {
-        "Tag in text from NLTK ": [
-            [
-            [
-                "L'histoire",
-                "NNP"
-            ],
-            [
-                "de",
-                "NNP"
-            ],
-            [
-                "la",
-                "FW"
-            ],
-            [
-                "France",
-                "NNP"
-            ],
-            [
-                "commence",
-                "NN"
-            ],
-            [
-                "avec",
-                "NN"
-            ] ...
-        ]
-        }
 
-
-- GET NLTK/NER: Permet d'extraire les entitées nommées d'un texte
-	
-        Response body:
-        {
-        "Names entities in text from NLTK ": [
-            "Francs",
-            "Normands",
-            "Alamans",
-            "Wisigoths",
-            "Burgondes",
-            "France"
-        ]
-        }
-    
     Un swaggerUI a eté fourni api.json permettant de repondre au standard OpenAPI et de fournir des explications sur cette API.
 
 ### Service Docker (de cette API):
