@@ -10,6 +10,18 @@ Objectifs:
 
 Installer Python 3 : [Téléchargement Python 3](https://www.python.org/downloads/)
 
+
+#### Installation:
+
+Create a virtual environment and activate it:
+
+    $ python3 -m venv venv
+    $ . venv/bin/activate
+
+Install requirements:
+
+    $ pip install -r requirements.txt
+
 ## Presentation du projet:
 
 ### Service Ontology:
@@ -25,29 +37,24 @@ You can now open PFR.ipynb and execute it.
 
 ### Service AWS:
 
-For AWS_service.ipynb: Open the conda terminal in your env:
-
-    $ conda install -c conda-forge poppler
-
 - /AWS: Dans ce repertoire l'utilisation du service Comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).
 
-    On y trouve un notebook que l'utilisateur doit executer cellules par cellules afin de voir les resultats.
-    Dans le repertoire /Download on y trouve des fichier telecharger pour effectuer les tests du service dans le notebook.
-    Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf. Une section dans le notebook explique les details.
+On y trouve un script python "AWS.py" et un notebook que l'utilisateur peut executer cellules par cellules afin de voir les resultats AWS_service.ipynb
 
+- Dans le repertoire /Download on y trouve des fichiers telechargés.
+Vous pouvez executez:
+
+    $ python3 AWS/AWS_Exemple.py
+
+Les resultats se trouves dans le fichiers json : /Download/EntitiesPDF.json
+
+- Dans le repertoire /Teacher, vous pouvez ajouter votre propre pdf puis executez:
+
+    $ python3 AWS/AWS_Teacher.py
+
+Les resultats se trouves dans le fichiers json : /Professeur/AWS_json_teacher.json
 
 ### Service Hadoop:
-
-#### Installation:
-
-Create a virtual environment and activate it:
-
-    $ python3 -m venv venv
-    $ . venv/bin/activate
-
-Install requirements:
-
-    $ pip install -r requirements.txt
 
 
 - /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
@@ -63,7 +70,7 @@ Install the requirement
     $ kinit s.adda-cs
     $ klist
 
-Vous devez executez write_csv.py puis csv_to_hdfs.py:
+#### Execution des fichiers python:
 
     $ python3 Hadoop/write_csv.py
     $ python3 Hadoop/csv_to_hdfs.py
@@ -71,6 +78,7 @@ Vous devez executez write_csv.py puis csv_to_hdfs.py:
 #### Vérifier que la table est sur hdfs (dans connexion ssh)
 
     $ hdfs dfs -ls /education/cs_2022_spring_1/s.adda-cs/PFR/
+
 
 ### Service SOA:
 
@@ -139,7 +147,7 @@ Go in the main folder and type to build the image:
 
     $ docker build -t pfr .
 
-Then this line to run the container:
+Then run the container:
 
     $ docker run -d --name mycontainer -p 80:80 pfr
 
@@ -151,7 +159,7 @@ Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
 
 Run the server with:
 
-    $ uvicorn main:app --reload
+    $ uvicorn app.main:app --reload
 
 Interactive API docs: 
 
