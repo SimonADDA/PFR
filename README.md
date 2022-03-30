@@ -11,10 +11,10 @@ Objectifs:
 
 - Dans chaque repertoire dedié à un service, vous trouverez un Readme.md permettant de vous guider dans l'execution des services
 
-    Cours AWS: /AWS
-    Cours Hadoop: /Hadoop
-    Cours Docker: /Docker
-    Cours SOA: /app
+    - Cours AWS: /AWS
+    - Cours Hadoop: /Hadoop
+    - Cours Docker: /Docker
+    - Cours SOA: /app
 
 
 

@@ -43,7 +43,7 @@ Install the requirement
     $ python3 Hadoop/write_csv.py
     $ python3 Hadoop/csv_to_hdfs.py
 
-#### Vérifier que la table est sur hdfs (dans connexion ssh)
+#### Vérifier que la table est sur hdfs (dans la connexion ssh)
 
     $ hdfs dfs -ls /education/cs_2022_spring_1/s.adda-cs/PFR/
 
