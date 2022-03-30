@@ -62,6 +62,4 @@ Interactive API docs:
 
 Now you can go to http://127.0.0.1:8000/docs#/ and try the API to analyse a text.
 
-ENJOY !!
-
 

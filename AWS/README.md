@@ -28,7 +28,7 @@ Install requirements:
 
 - /AWS: Dans ce repertoire l'utilisation du service Comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).
 
-On y trouve deux script python et un notebook que l'utilisateur peut executer cellules par cellules afin de voir les resultats en details AWS_service.ipynb
+On y trouve deux script python et un notebook que l'utilisateur peut executer cellules par cellules afin de voir les resultats en details (AWS_service.ipynb).
 
 Pour tester avec des pdfs deja fourni, executez simplement cette commande:
 
@@ -36,7 +36,7 @@ Pour tester avec des pdfs deja fourni, executez simplement cette commande:
 
 Les resultats se trouves dans le fichiers json : /Download/EntitiesPDF.json
 
-Pour votre propre pdf, ajoutez votre pdf dans le repertoire Professeur et executez cette commande:
+Pour votre propre pdf, ajoutez ce dernier dans le repertoire Professeur et executez cette commande:
 
         $ python3 AWS/AWS_Teacher.py
 

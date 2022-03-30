@@ -21,10 +21,11 @@ Install requirements:
 
     $ pip install -r requirements.txt
 
-### Service Hadoop:
+## Service Hadoop:
 
 - /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
 
+### Dans le venv:
 
 #### Export scientific articles metadata to HDFS
 
