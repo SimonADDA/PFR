@@ -3,7 +3,7 @@ import arxiv
 import csv
 
 #You can choose here how many pdf you want. 
-max_results=1000
+max_results=500
 
 search = arxiv.Search(
   query = "AI",
