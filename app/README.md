@@ -11,7 +11,7 @@ Objectifs:
 Installer Python 3 : [Téléchargement Python 3](https://www.python.org/downloads/)
 
 
-#### Installation:
+### Installation:
 
 Create a virtual environment and activate it:
 
@@ -22,7 +22,7 @@ Install requirements:
 
     $ pip install -r requirements.txt
 
-### Service SOA:
+## Service SOA:
 
 - /app : Dans le repertoire /app, vous trouverez un API permettant d'analyser le contenu d'un texte avec NLTK. Deux services sont proposés:
 
@@ -38,7 +38,7 @@ Install requirements:
 
     Un swaggerUI a eté fourni api.json permettant de repondre au standard OpenAPI et de fournir des explications sur cette API.
 
-### Service Docker (de cette API):
+### Sous Docker (de cette API):
 
 Go in the main folder and type to build the image:
 
@@ -52,7 +52,7 @@ Interactive API docs:
 
 Now you can go to http://127.0.0.1/docs and try the API to analyse a text.
 
-##### Sinon, executez avec  Python:
+### Sinon, executez avec  Python:
 
 Run the server with:
 
@@ -62,4 +62,6 @@ Interactive API docs:
 
 Now you can go to http://127.0.0.1:8000/docs#/ and try the API to analyse a text.
 
+## Modele C4
 
+Dans le fichier Service SOA.docx vous trouverez les informations sur le modele C4 de cette Architecture ainsi que des informations sur l'API.

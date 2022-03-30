@@ -5,11 +5,18 @@
 
 Objectifs:
 
-Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite. Être en mesure d'apporter un indicateur de la qualité et de la précision de la chaîne de traitement fait partie des objectifs
+Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite.
 
-# Dans chaque repertoire dedié à un service, vous trouverez un Readme.md permmetant de vous guider dans l'execution des services
+- Pour exécuter la creation du graph d'ontologies, il vous suffit de lancer le fichier PFR.ipynb sous anaconda
 
-!Enjoy
-BY Simon Adda
+- Dans chaque repertoire dedié à un service, vous trouverez un Readme.md permettant de vous guider dans l'execution des services
+
+    Cours AWS: /AWS
+    Cours Hadoop: /Hadoop
+    Cours Docker: /Docker
+    Cours SOA: /app
+
+
+
 
 
