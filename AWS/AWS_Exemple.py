@@ -75,6 +75,8 @@ class RegexpReplacer(object):
 replacer=RegexpReplacer()
 references=replacer.replace(references)
 
+
+#Si erreur, ajoutez vos ID:
 ACCESS_ID='...'
 ACCESS_KEY='...'
 session_token='...'
