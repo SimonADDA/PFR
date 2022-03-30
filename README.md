@@ -58,7 +58,6 @@ Les resultats se trouves dans le fichiers json : /Professeur/AWS_json_teacher.js
 
 ### Service Hadoop:
 
-
 - /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
 
 

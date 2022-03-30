@@ -10,7 +10,6 @@ import os
 import urllib.request
 import pdftotext
 
-import re
 path='./AWS/Professeur'
 article_teacher=os.listdir(path)[-1]
 my_article=load_pdf(article_teacher)
