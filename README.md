@@ -7,8 +7,6 @@ Objectifs:
 
 Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite.
 
-- Pour exécuter la creation du graph d'ontologies, il vous suffit de lancer le fichier PFR.ipynb sous anaconda.
-Vous trouverez dans le repertoire /Download le fichier .owl que vous pouvez ouvrir dans Protégé.
 
 - Dans chaque repertoire dedié à un service, vous trouverez un Readme.md permettant de vous guider dans l'execution des services
 
@@ -16,8 +14,13 @@ Vous trouverez dans le repertoire /Download le fichier .owl que vous pouvez ouvr
     - Cours Hadoop: /Hadoop
     - Cours Docker: /Docker
     - Cours SOA: /app
+    - Ontologie : ci dessous ↓
 
 
+### Service Ontologie:
 
+**Python : PFR.ipynb**
 
+Vous pouvez maintenant ouvrir PFR.ipynb et l'executer.(Exemple avec 10 pdf).
 
+Le fichier d'ontologie **onto.owl** se trouve dans **/owl**

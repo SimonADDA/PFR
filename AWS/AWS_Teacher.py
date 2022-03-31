@@ -1,5 +1,5 @@
 import re
-from AWS_Exemple import load_pdf, compehend, json_creation, create_json_file
+from AWS_Exemple import compehend, json_creation, create_json_file
 
 #AWS
 import boto3
@@ -8,7 +8,15 @@ import os
 
 #PDFTEXT
 import urllib.request
-import pdftotext
+from pdfminer.high_level import extract_text
+
+# Load your PDF
+def load_pdf(article):
+
+    with open(f'./AWS/Professeur/{article}', "rb") as f:
+        text = extract_text(f)
+        mypdftext=text
+    return mypdftext
 
 path='./AWS/Professeur'
 article_teacher=os.listdir(path)[-1]

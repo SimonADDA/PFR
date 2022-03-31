@@ -5,7 +5,7 @@ import os
 
 #PDFTEXT
 import urllib.request
-import pdftotext
+from pdfminer.high_level import extract_text
 
 import re
 path='./Download'
@@ -16,12 +16,12 @@ last_article=os.listdir(path)[-1]
 def load_pdf(article):
     try:
         with open(f'Download/{article}', "rb") as f:
-            pdf = pdftotext.PDF(f)
-            mypdftext="\n\n".join(pdf)
+            text = extract_text(f)
+            mypdftext=text
     except:
-        with open(f'AWS/Professeur/{article}', "rb") as f:
-            pdf = pdftotext.PDF(f)
-            mypdftext="\n\n".join(pdf)
+        with open(f'Professeur/{article}', "rb") as f:
+            text = extract_text(f)
+            mypdftext=text
     return mypdftext
 
 pdf=load_pdf(first_article)

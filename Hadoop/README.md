@@ -48,4 +48,7 @@ Install the requirement
 
 ### Zeppelin: s.adda
 
-    http://zep-1.au.adaltas.cloud:9995/#/
+http://zep-1.au.adaltas.cloud:9995/#/
+
+![Graph Zeppelin](/Hadoop/Graph.PNG?raw=true "Graph Zeppelin")
+

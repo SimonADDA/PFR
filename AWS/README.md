@@ -2,9 +2,9 @@
 
 # Projet Fil Rouge MS SIO Simon ADDA 
 
-Objectifs:
+**AWS service**
 
-Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite. Être en mesure d'apporter un indicateur de la qualité et de la précision de la chaîne de traitement fait partie des objectifs
+*Dans cette partie du projet vous trouverez l'utilisation du service Comprehend de AWS.*
 
 ## Pré-requis
 
@@ -28,16 +28,16 @@ Install requirements:
 
 - /AWS: Dans ce repertoire l'utilisation du service Comprehend de AWS. Ce dernier permet d'extraire les entites nommées d'un texte (Cours AWS).
 
-On y trouve deux script python et un notebook que l'utilisateur peut executer cellules par cellules afin de voir les resultats en details (AWS_service.ipynb).
+On y trouve deux scripts python et un notebook (que l'utilisateur peut executer cellules par cellules afin de voir les resultats en details AWS_service.ipynb).
 
 Pour tester avec des pdfs deja fourni, executez simplement cette commande:
 
         $ python3 AWS/AWS_Exemple.py
 
-Les resultats se trouves dans le fichiers json : /Download/EntitiesPDF.json
+Les resultats se trouves dans le fichiers json : **/Download/EntitiesPDF.json**
 
 Pour votre propre pdf, ajoutez ce dernier dans le repertoire Professeur et executez cette commande:
 
         $ python3 AWS/AWS_Teacher.py
 
-Les resultats se trouves dans le fichiers json : /Professeur/AWS_json_teacher.json
+Les resultats se trouves dans le fichiers json : **/Professeur/AWS_json_teacher.json**
