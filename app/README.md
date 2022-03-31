@@ -2,9 +2,12 @@
 
 # Projet Fil Rouge MS SIO Simon ADDA 
 
-Objectifs:
+**FastAPI app:**
 
-Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite. Être en mesure d'apporter un indicateur de la qualité et de la précision de la chaîne de traitement fait partie des objectifs
+FastAPI est un framework Web moderne et rapide (haute performance) pour la création d'API avec Python 3.6+ basé sur des conseils de type Python standard.
+
+Cette API permet d'extraire les entitées nommées d'un texte.
+
 
 ## Pré-requis
 
@@ -38,7 +41,7 @@ Install requirements:
 
     Un swaggerUI a eté fourni api.json permettant de repondre au standard OpenAPI et de fournir des explications sur cette API.
 
-### Sous Docker (de cette API):
+### Lancer cette API sous Docker (de cette API):
 
 Go in the main folder and type to build the image:
 
@@ -64,4 +67,4 @@ Now you can go to http://127.0.0.1:8000/docs#/ and try the API to analyse a text
 
 ## Modele C4
 
-Dans le fichier Service SOA.docx vous trouverez les informations sur le modele C4 de cette Architecture ainsi que des informations sur l'API.
+Dans le fichier Service SOA.pdf vous trouverez les informations sur le modele C4 de cette Architecture ainsi que des informations sur l'API.

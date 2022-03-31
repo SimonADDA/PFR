@@ -2,9 +2,11 @@
 
 # Projet Fil Rouge MS SIO Simon ADDA 
 
-Objectifs:
+*Dans cette partie vous trouverez des inforamtions sur l'export des metadata d'articles scientfiques vers HDFS.*
 
-Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite. Être en mesure d'apporter un indicateur de la qualité et de la précision de la chaîne de traitement fait partie des objectifs
+**Service Hadoop:**
+
+- /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py).
 
 ## Pré-requis
 
@@ -21,9 +23,6 @@ Install requirements:
 
     $ pip install -r requirements.txt
 
-## Service Hadoop:
-
-- /Hadoop : Dans ce repertoire vous trouverez un fichier d'execution de code csv (write_csv.py) et un code d'ecriture dans le cluster (csv_to_hdfs.py). 
 
 ### Dans le venv:
 

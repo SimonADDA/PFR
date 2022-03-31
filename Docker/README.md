@@ -2,9 +2,7 @@
 
 # Projet Fil Rouge MS SIO Simon ADDA 
 
-Objectifs:
-
-Étudier et développer l'ensemble d'une chaîne de traitements en Python, de la collecte des données en passant par la validation, la reconnaissance d'entités nommées, la mise en relation, la restitution, la déduction de  nouvelles données, l'interrogation, la représentation de la connaissance produite. Être en mesure d'apporter un indicateur de la qualité et de la précision de la chaîne de traitement fait partie des objectifs
+*Dans cette partie vous trouverez l'installation avec Docker de l'API (dans le dossier /app) avec FastAPI.*
 
 ## Pré-requis
 
