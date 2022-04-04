@@ -21,6 +21,7 @@ Create a virtual environment and activate it:
 
 Install requirements:
 
+    $ apt-get install gcc python-dev libkrb5-dev
     $ pip install -r requirements.txt
 
 

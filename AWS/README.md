@@ -20,6 +20,8 @@ Create a virtual environment and activate it:
 
 Install requirements:
 
+    $ apt-get install gcc python-dev libkrb5-dev
+    $ pip install pywinrm[kerberos]
     $ pip install -r requirements.txt
 
 ## Presentation du projet:
@@ -36,7 +38,7 @@ Pour tester avec des pdfs deja fourni, executez simplement cette commande:
 
 Les resultats se trouves dans le fichiers json : **/Download/EntitiesPDF.json**
 
-Pour votre propre pdf, ajoutez ce dernier dans le repertoire Professeur et executez cette commande:
+Pour votre propre pdf, **ajoutez ce dernier dans le repertoire /Professeur** et executez cette commande:
 
         $ python3 AWS/AWS_Teacher.py
 
