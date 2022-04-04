@@ -9,18 +9,6 @@
 Installer Python 3 : [Téléchargement Python 3](https://www.python.org/downloads/)
 
 
-#### Installation:
-
-Create a virtual environment and activate it:
-
-    $ python3 -m venv venv
-    $ . venv/bin/activate
-
-Install requirements:
-
-    $ pip install -r requirements.txt
-
-
 ### Service Docker - API NLTK:
 
 Go in the main folder and type to build the image:
