@@ -37,7 +37,7 @@ Pour tester avec des pdfs deja fourni, executez simplement cette commande:
 
 Les resultats se trouves dans le fichiers json : **/Download/EntitiesPDF.json**
 
-Pour votre propre pdf, **supprimez le pdf fourni "projetSIO2021-2022.pdf" ajoutez ce votre pdf dans le repertoire /Professeur** et executez cette commande:
+Pour votre propre pdf, **supprimez le pdf fourni "projetSIO2021-2022.pdf" dans /Professeur et ajoutez votre pdf dans ce meme repertoire** et executez cette commande:
 
         $ python3 AWS/AWS_Teacher.py
 
