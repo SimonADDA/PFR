@@ -21,7 +21,6 @@ Create a virtual environment and activate it:
 Install requirements:
 
     $ apt-get install gcc python-dev libkrb5-dev
-    $ pip install pywinrm[kerberos]
     $ pip install -r requirements.txt
 
 ## Presentation du projet:
